@@ -18,7 +18,9 @@ export class AppComponent {
     body: new FormControl(''),
   });
 
-  postBlog(title: string | null | undefined, body: string | null | undefined) {
+  postBlog(
+    title: string | null | undefined,
+    body: string | null | undefined) {
     console.log(`Posting blog titles ${title}, with the contents ${body}.`);
   }
 }
